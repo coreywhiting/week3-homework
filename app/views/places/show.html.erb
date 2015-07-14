@@ -1,0 +1,12 @@
+<div class="place">
+  <h2><%= @place.title %></h2>
+
+  <%= link_to 'Edit', "/places/#{@place.id}/edit" %>
+
+  <p>
+    <span class="rating">Cost $<%= @place.admission_price %></span><br>
+    <span class="rating">URL <%= @place.url %></span><br>
+    <span class="rating">Description $<%= @place.description %></span><br>
+  </p>
+
+</div>

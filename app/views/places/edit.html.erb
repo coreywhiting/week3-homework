@@ -1,0 +1,14 @@
+<div class="place">
+  <h2>Edit a place</h2>
+
+  <p>
+    <form action="/places/<%= @place.id %>/update">
+	  	Title: <input name="title" type="text" value="<%= @place.title %>" required><br>
+	  	URL: <input name="url" type="text" value="<%= @place.url %>" required><br>
+	  	Price: <input name="admission_price" value="<%= @place.admission_price %>" type="number" required><br>
+	  	Description: <input name="description" value="<%= @place.description %>" type="text" required>
+	  	<input type="submit">
+	</form>
+  </p>
+
+</div>
